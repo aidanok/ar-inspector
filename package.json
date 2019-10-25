@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@types/vue": "2.0.0",
-    "ar-block-sync": "file:../ar-block-sync/pkg",
+    "ar-block-sync": "https://e5hareckrltt.arweave.net/f-8pqMhEMM1v8BlhN81yazG_P7og_Yfzv1lAeE27B1o",
     "arweave": "1.4.1",
     "core-js": "^2.6.5",
     "localforage": "1.7.3",
