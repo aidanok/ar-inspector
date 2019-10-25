@@ -12,12 +12,15 @@ Simple usage:
 - JSON content in your data txs will be displayed in a friendly tree-view in the inspect tx page. 
 
  
- You can also add filters things like `page:title` contains `Syria` for example to see when people are archiving
- web pages with Syria in the title ( about 70% of content at the moment it seems! :S )
+ You can also add filters for things like `page:title` contains `Syria` for example to see when people are archiving
+ web pages with Syria in the title
 
 
 Uses: https://github.com/aokisok/ar-block-sync to synchronize the last 40 blocks to your browser storage and get 
 notified of new blocks & txs. 
+
+
+Current deployed version at: https://as7abt56xnbr.arweave.net/TAGTPXwZeja4g8ND6r8Qv77Of6G8yUqzv5ZS5cdqN74
 
 
 
