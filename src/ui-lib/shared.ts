@@ -14,9 +14,9 @@ import $router from '../router';
 
 const blockWatcherOptions: Partial<BlockWatcherOptions>  = {
   startupDelay: 0.5,
-  minPollTime: 30,
-  maxPollTime: 60,
-  blocksToSync: 30,
+  minPollTime: 46,
+  maxPollTime: 110,
+  blocksToSync: 40,
   persist: true,
   retrieveTags: true,
 }
