@@ -1,0 +1,81 @@
+.arweave-transactions-filters {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+}
+
+.arweave-transactions-filters > div:first-child {
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
+  border-bottom: 1px dashed #0000ff36;
+}
+
+.arweave-transactions-display-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15em;
+  padding: 0.3em;
+}
+
+.arweave-transactions-list {
+  margin: 1em;
+}
+
+.arweave-transaction {
+  text-align: left;
+  margin-left: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.4em;
+  border-bottom: 1px solid #e2e1e1;
+  padding: 0.4em;
+  font-size: 0.8em;
+  justify-content: flex-start;
+  transition: opacity height: 0.12s 0.12s;
+}
+
+/*.arweave-transaction:not(.transaction-matched) {
+  opacity: 0.12;
+}*/
+
+.arweave-transaction > * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+ }
+
+.arweave-transaction-time-ago {
+  width: 10em;
+  text-align: center;
+}
+
+.arweave-transaction a,
+.arweave-transaction a:link,
+.arweave-transaction a:visited,
+.arweave-transaction a:active {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #0c477b;
+  font-family: Courier, monospace;
+  font-size: 0.9em;
+  width: 12em;
+
+}
+.arweave-transaction a:hover {
+  text-decoration: underline;
+  color: #03004e;
+}
+.arweave-transaction-tags {
+  padding: 0.35em;
+  border-radius: 0.4em;
+  background: #dadada54;
+  cursor: pointer;
+  width: unset !important;
+  flex-grow: 1;
+}
+
+

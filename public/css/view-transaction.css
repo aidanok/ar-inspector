@@ -1,0 +1,43 @@
+.view-transaction {
+  margin: 1em;
+  font-size: 0.85em;
+}
+.view-transaction-txid-jump {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: monospace;
+  margin-bottom: 1.2em;
+}
+
+.view-transaction-txid-jump label {
+  margin-right: 1em;
+}
+
+.view-transaction-txid-jump input {
+  width: 28em;
+  padding: 0.5em;
+  border-radius: 0.2em;
+  border: 1px solid #aaa;
+}
+
+.view-transaction-txid-jump svg {
+  opacity: 0.7;
+  margin-left: 1em;
+}
+
+.view-transaction-tag {
+  display: flex;
+  align-items: center;
+  padding: 0.2em;
+  border-bottom: 1px dashed #ccc;
+}
+
+.view-transaction-tag div:first-child {
+  width: 10em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

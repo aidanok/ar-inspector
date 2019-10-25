@@ -1,0 +1,79 @@
+#app {
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+#nav {
+  padding: 1em;
+  border-bottom: 1px solid black;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-active {
+  color: #4274b9;
+}
+
+
+/* List transisitions */
+.bounce-enter-active {
+  animation: bounce-in .25s;
+}
+.bounce-leave-active {
+  animation: bounce-in .25s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .35s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.fade-move {
+  transition: transform .4s;
+}
+
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateX(-120px);
+}
+
+
+.list-complete-item {
+  transition: all 0.4s;
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-complete-enter, .list-complete-leave-to
+/* .list-complete-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateX(-130px);
+}
+.list-complete-leave-active {
+  position: absolute;
+}

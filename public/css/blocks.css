@@ -1,0 +1,186 @@
+
+.arweave-block {
+  margin: 1em;
+  border: 1px solid rgb(208, 222, 202);
+  box-shadow: 
+      4px 4px 8px 1px rgba(193, 197, 212, 0.35),
+      inset 0px 0px 3px 0px rgba(150, 154, 171, 0.57);
+  font-size: 0.76em;
+  margin-bottom: 2em;
+}
+
+.arweave-block-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: .4em .4em;
+  justify-content: space-between;
+}
+
+.arweave-block-header > * {
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding: 0.2em;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arweave-block-header div:nth-child(1) {
+  width: 6em;
+  font-weight: bold;
+}
+
+.arweave-block-header div:nth-child(2) {
+  width: 6em;
+
+}
+
+.arweave-block-header div:nth-child(3) {
+  width: 6em;
+  text-align: right;
+}
+
+.arweave-block-header div:nth-child(4) {
+  text-align: right;
+  width: 6em;
+}
+.arweave-block-header div:nth-child(5) {
+  text-align: right;
+  width: 6em;
+}
+
+.arweave-block-header div:last-child {
+  margin-left: auto;
+  text-align: right;
+  width: 8em;
+}
+
+.arweave-block-content {
+  border-top: 1px solid #ccc;
+  box-shadow: 
+      inset 0px 0px 3px 0px rgba(150, 154, 171, 0.57);
+  background: #eeeeee5e;
+  padding: 0.6em;
+  
+}
+.arweave-block-transaction {
+  text-align: left;
+  margin-left: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.4em;
+  border-bottom: 1px solid #eee;
+}
+
+.arweave-block-transaction a,
+.arweave-block-transaction a:link,
+.arweave-block-transaction a:visited,
+.arweave-block-transaction a:active {
+  display: inline-block;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #0c477b;
+  font-family: Courier, monospace;
+  font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.arweave-block-transaction a:hover {
+  text-decoration: underline;
+  color: #03004e;
+}
+.arweave-block-transaction-tags {
+  padding: 0.35em;
+  border-radius: 0.4em;
+  background: #dadada54;
+  cursor: pointer;
+}
+
+.arweave-block-transaction-tags-popover {
+  border: 1px solid #ccc;
+  border-radius: 0.14em;
+  box-shadow: 
+      0px 0px 5px 0px rgba(193, 197, 212, 0.35),
+      inset 0px 0px 3px 7px rgba(150, 154, 171, 0.07);
+
+  
+}
+.arweave-block-transaction-tags-popover > div {
+  padding: 0.2em;
+  margin: 0em 0.3em;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.arweave-block-transaction-tags-popover > div > div:nth-child(1) {
+  width: 10em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: none;
+}
+
+
+
+.block-watcher-sync-info {
+  text-align: left;
+  margin: 1em;
+}
+.block-watcher-sync-info h3 {
+  text-align: center;
+}
+.block-watcher-block {
+  margin-left: 0.45em;
+  width: 80%;
+  margin-top: 1.4em;
+  padding: 0.5em;
+  outline: 1px solid #cecdcd;
+  background: #f7f6f3;
+  text-align: left;
+  font: monospace;
+  color: #555;
+}
+
+.block-watcher-tx {
+  font-size: 0.8em;
+  margin-bottom: 0.84em;
+  border-bottom: 3px dashed #ccc;
+  margin-left: 0.5em;
+  text-align: left; 
+  padding: 1em;
+  border: 1px solid #ccc; 
+}
+
+.block-watcher-tx-header {
+  display: block;
+  border-bottom: 1px solid #eae7e7;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+
+}
+
+.block-watcher-tx a:link,
+.block-watcher-tx a:visited,
+.block-watcher-tx a:hover {
+  color: #515357;
+  text-decoration: none;
+}
+
+.block-watchr-tx-header {
+  text-align: left;
+  margin-bottom: 0.6em;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.block-watcher-tx-tag {
+  text-align: left; 
+  padding: 0.15em;
+  display: flex;
+}
+
+.block-watcher-tx-tag div:first-child {
+  min-width: 13em;
+  max-width: 13em;
+  font-weight: normal;
+}

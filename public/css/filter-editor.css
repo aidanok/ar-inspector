@@ -1,0 +1,85 @@
+
+.simple-filter {
+  margin: 1em;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 0.45em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.simple-filter h4 {
+  border-bottom: 1px dashed #ccc;
+  text-align: center;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+}
+
+.simple-filter-header {
+  padding: 1em;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.5em;
+  background: #eeeeee3b;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.simple-filter-header > input {
+  margin-left: 1em;
+  padding: 0.2em;
+}
+.simple-filter-header > button {
+  margin-left: 1em;
+}
+
+.simple-filter > * {
+  margin-bottom: 0.4em;
+}
+
+/*.simple-filter button {
+  background: white;
+  border: 1px solid #9a9ac5;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0.3em;
+}*/
+
+.simple-filter-conditions {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2em;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0.2em;
+}
+
+.simple-filter-conditions > * {
+  margin-left: 0.3em;
+}
+.simple-filter-conditions > *:first-child {
+  margin-left: 0.0em;
+}
+.simple-filter-conditions > button {
+  margin-left: auto;
+}
+
+.simple-filter-conditions-buttons {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 0.2em;
+  padding-bottom: 1em;
+  justify-content: flex-end;
+}
+
+.simple-filter-output {
+  padding-top: 1em;
+  text-align: left;
+}
+
+.simple-filter-output pre {
+  white-space: pre;
+  font-size: 0.6em;
+  overflow: auto;
+  border: 1px dashed #ccc;
+  padding: 1em;
+}
