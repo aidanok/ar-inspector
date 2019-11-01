@@ -5,7 +5,7 @@
     <div> {{ block.info.indep_hash }} </div>
     <div> {{ block.info.txs.length }} TXs </div>
     <div> {{ (block.info.block_size /  1024 / 1024).toFixed(1) }} MB  </div>
-    <div v-moment-ago="block.info.timestamp * 1000"></div> 
+    <vue-moments-ago prefix="" :date="datetime" ></vue-moments-ago> 
   </div>
   <div v-if="open" class="arweave-block-content">
     
@@ -46,9 +46,13 @@
 import Vue from 'vue'
 
 import { SyncedBlock } from 'ar-block-sync';
-import { join } from 'path';
+import VueMomentsAgo from 'vue-moments-ago';
+
 
 export default Vue.extend({
+  
+  components: { VueMomentsAgo },
+
   props: {
     block: {
       type: Object as () => SyncedBlock,
@@ -60,6 +64,9 @@ export default Vue.extend({
   }),
 
   computed: {
+    datetime: function(): string {
+      return new Date(this.block.info.timestamp * 1000).toISOString();
+    },
     tagsTooltip: function(): string[] {
 
       // html escapee text. NO XSS HERE!

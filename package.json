@@ -13,14 +13,13 @@
     "arweave": "1.4.1",
     "core-js": "^2.6.5",
     "localforage": "1.7.3",
-    "moment": "2.24.0",
     "promises-tho": "1.0.1",
     "rxjs": "6.5.3",
     "stringz": "2.0.0",
     "v-tooltip": "2.0.2",
     "vue": "^2.6.10",
-    "vue-json-tree-view": "2.1.4",
-    "vue-moment": "4.0.0",
+    "vue-json-tree": "0.4.1",
+    "vue-moments-ago": "0.2.0",
     "vue-popup": "0.2.14",
     "vue-router": "^3.0.3",
     "vue-svg-loader": "0.12.0"
@@ -30,6 +29,7 @@
     "@vue/cli-plugin-typescript": "^3.12.0",
     "@vue/cli-service": "^3.12.0",
     "typescript": "^3.4.3",
+    "vue-cli-plugin-webpack-bundle-analyzer": "1.4.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
