@@ -8,6 +8,7 @@ module.exports = {
   devServer: {
     https: false
   },
+  publicPath: './',
   chainWebpack: config => {
     config.resolve.alias.set("ar-block-watcher", resolve("../ar-block-watcher/src"));
     config
