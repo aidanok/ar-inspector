@@ -2,11 +2,11 @@
   <div class="arweave-transaction">
     <div> {{ block_height }} </div>
     <time-ago  class="arweave-transaction-time-ago" prefix="" :datetime="block_timestamp * 1000"></time-ago> 
-    <router-link class="arweave-transaction-id-link" :to="`/transaction/${transaction.id}`">{{ transaction.id }} </router-link>
+    <router-link class="arweave-transaction-id-link" :to="`/tx/${transaction.id}`">{{ transaction.id }} </router-link>
     <router-link 
       class="arweave-transaction-tags" 
       v-tooltip="{ delay: 650, content: tagsTooltip }"
-      :to="`/transaction/${transaction.id}`"
+      :to="`/tx/${transaction.id}`"
     >
       {{ user_tags.map(tag => tag.name).slice(0, 8).join(',  ') || 'No Tags' }}
     </router-link>

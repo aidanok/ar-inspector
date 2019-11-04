@@ -30,8 +30,8 @@ export default new Router({
       component: Filters, 
     },
     {
-      path: '/transaction/:id?',
-      name: 'transaction',
+      path: '/tx/:id?',
+      name: 'tx',
       component: ViewTransaction,
       props: true
     },
