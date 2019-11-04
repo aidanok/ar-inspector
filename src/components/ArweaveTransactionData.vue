@@ -2,7 +2,7 @@
   <div>
     
     <div v-if="txDetectedContentType === 'json'">
-      <json-tree :raw="txDataString" level=2></json-tree>
+      <json-tree :raw="txDataString"></json-tree>
     </div>
 
     <div v-if="txDetectedContentType === 'string'">
