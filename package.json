@@ -11,18 +11,15 @@
     "@types/vue": "2.0.0",
     "ar-block-sync": "https://e5hareckrltt.arweave.net/f-8pqMhEMM1v8BlhN81yazG_P7og_Yfzv1lAeE27B1o",
     "arweave": "1.4.1",
-    "core-js": "^2.6.5",
-    "localforage": "1.7.3",
     "promises-tho": "1.0.1",
     "rxjs": "6.5.3",
     "stringz": "2.0.0",
     "v-tooltip": "2.0.2",
     "vue": "^2.6.10",
     "vue-json-tree": "0.4.1",
-    "vue-moments-ago": "0.2.0",
-    "vue-popup": "0.2.14",
     "vue-router": "^3.0.3",
-    "vue-svg-loader": "0.12.0"
+    "vue-svg-loader": "0.12.0",
+    "vue2-timeago": "1.2.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.0",

@@ -5,7 +5,7 @@
     <div> {{ block.info.indep_hash }} </div>
     <div> {{ block.info.txs.length }} TXs </div>
     <div> {{ (block.info.block_size /  1024 / 1024).toFixed(1) }} MB  </div>
-    <vue-moments-ago prefix="" :date="datetime" ></vue-moments-ago> 
+    <time-ago prefix="" :datetime="block.info.timestamp * 1000" ></time-ago> 
   </div>
   <div v-if="open" class="arweave-block-content">
     
@@ -46,12 +46,12 @@
 import Vue from 'vue'
 
 import { SyncedBlock } from 'ar-block-sync';
-import VueMomentsAgo from 'vue-moments-ago';
+import TimeAgo from 'vue2-timeago';
 
 
 export default Vue.extend({
   
-  components: { VueMomentsAgo },
+  components: { TimeAgo },
 
   props: {
     block: {

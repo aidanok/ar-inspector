@@ -1,7 +1,7 @@
 <template>
   <div class="arweave-transaction">
     <div> {{ block_height }} </div>
-    <vue-moments-ago  class="arweave-transaction-time-ago" prefix="" :date="datetime"></vue-moments-ago> 
+    <time-ago  class="arweave-transaction-time-ago" prefix="" :datetime="block_timestamp * 1000"></time-ago> 
     <router-link class="arweave-transaction-id-link" :to="`/transaction/${transaction.id}`">{{ transaction.id }} </router-link>
     <router-link 
       class="arweave-transaction-tags" 
@@ -18,11 +18,11 @@ import Vue from 'vue'
 import { BlockTransaction } from 'ar-block-sync/dist-types/types';
 import { encodeTextForHtml } from '@/ui-lib/escape-html';
 
-import VueMomentsAgo from 'vue-moments-ago';
+import TimeAgo from 'vue2-timeago';
 
 export default Vue.extend({
 
-  components: { VueMomentsAgo },
+  components: { TimeAgo },
 
   props: {
     transaction: {
