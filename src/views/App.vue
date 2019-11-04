@@ -7,7 +7,7 @@
       |
       <router-link to="/filters">Filters</router-link>
       |
-      <router-link to="/transaction/">Transaction</router-link>
+      <router-link to="/tx/">Transaction</router-link>
       |
       <router-link to="/blocks">Blocks</router-link>
     </div>

@@ -65,7 +65,7 @@ export class Notifications {
       n.onclick = (e) => {
         console.log('Got OnClick');
         window.focus();
-        this.$router.push(`/transaction/${tx.id}`);
+        this.$router.push(`/tx/${tx.id}`);
       }
     }
   }

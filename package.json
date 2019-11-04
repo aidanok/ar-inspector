@@ -1,6 +1,6 @@
 {
   "name": "ar-inspector",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@types/vue": "2.0.0",
-    "ar-block-sync": "https://e5hareckrltt.arweave.net/f-8pqMhEMM1v8BlhN81yazG_P7og_Yfzv1lAeE27B1o",
+    "ar-block-sync": "https://euoqle2oq5nw.arweave.net/XHsYY_u7GEHIo-kFn8tHKaxSdg5gF_VIircofC3UxHc",
     "arweave": "1.4.1",
     "promises-tho": "1.0.1",
     "rxjs": "6.5.3",
