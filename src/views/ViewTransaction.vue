@@ -9,15 +9,21 @@
       </a>
     </div>
 
-    <div v-if="!loadingTags">
+    <div v-if="!loadingTags && !error">
       <div class="view-transaction-tag" v-for="tag in tags" :key="tag.name"> 
-        <div>{{tag.name}}</div><div>{{tag.value}}</div>
+        <div>{{tag.name}}</div> 
+        <div v-if="!isTxIdLike(tag.value)">{{tag.value}}</div>
+        <div v-else>
+          <router-link :to="`/transaction/${tag.value}`">{{tag.value}}</router-link>
+        </div>
       </div>
     </div>
     
     <div v-if="loadingTags" style="text-align: center; padding: 4em;">
       <loading></loading>
     </div>
+
+    <div v-if="error" style="margin: 3em; padding: 2em; border: 1px dashed rgba(200,0,0,0.3);"> {{ error }} </div> 
 
     <div class="view-transaction-raw-data" v-if="fullTx && !loadingTags">
       <h6> Raw Transaction data </h6>
@@ -47,6 +53,7 @@ export default Vue.extend({
     txId: '',
     tags: [] as { name: string, value: string }[],
     loadingTags: false,
+    error: '',
     fullTx: null as any, 
   }),
 
@@ -66,22 +73,33 @@ export default Vue.extend({
   },
 
   methods: {
+    isTxIdLike: function(val: any) {
+      return typeof val === 'string' && /^[a-zA-Z0-9_-]{43}/.test(val);
+    },
     async loadTx(id: string) {
       this.loadingTags = true;
-      console.log(`Getting data for ${id}`);
-      
-      this.readTxData(id);
+      this.error = '';
+      this.tags = [];
+      try {
+        console.log(`Getting data for ${id}`);
+        
 
-      const tags = await readTxMetadata(id);
+        const tags = await readTxMetadata(id);
+        
+        tags.sort((a, b) => {
+          return a.name.startsWith('block_') ? -1 : 1;
+        })
+        console.log(tags);
+        console.log(`Got ${tags.length} tags for ${this.id}`);
+        await this.readTxData(id);
+        this.tags = tags; 
+        this.loadingTags = false;
+      } catch (e) {
+        this.loadingTags = false;
+        this.error = 'Unable to load TX'; 
+        this.fullTx = null;
+      }
       
-      tags.sort((a, b) => {
-        return a.name.startsWith('block_') ? -1 : 1;
-      })
-      console.log(tags);
-      console.log(`Got ${tags.length} tags for ${this.id}`);
-      this.tags = tags; 
-      this.loadingTags = false;
-      this.readTxData(id);
     },
 
     async readTxData(id: string) {
