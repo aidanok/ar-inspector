@@ -15,7 +15,7 @@ Uses: https://github.com/aokisok/ar-block-sync to synchronize the last 40 blocks
 notified of new blocks & txs. 
 
 
-Current deployed version at: https://aokisok.github.io/ar-inspector/latest.html 
+Current deployed version at: [https://aokisok.github.io/ar-inspector/latest.html](https://aokisok.github.io/ar-inspector/latest.html)
 
 You can use the above url and append #tx/TX_ID to jump to view transaction page directly. 
 
