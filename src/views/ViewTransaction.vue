@@ -61,7 +61,11 @@ export default Vue.extend({
   created() {
     this.editingId = this.id;
     this.loadedId = this.id;
-    this.loadTx(this.loadedId);
+    if (this.isTxIdLike(this.loadedId)) {
+      this.loadTx(this.loadedId);
+    } else {
+      this.error = "Enter a valid transaction Id to view it."
+    }
   },
 
   watch: {
