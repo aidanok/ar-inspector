@@ -10,7 +10,7 @@
     </div>
 
     <div v-if="txDetectedContentType === 'web'">
-      <iframe style="width: 100%; height: 60em;" :src="`https://arweave.net/${tx.id}`">
+      <iframe style="width: 100%; height: 35em" :src="`https://arweave.net/${tx.id}`">
       </iframe>
     </div>
 
@@ -20,6 +20,7 @@
 
   </div>
 </template>
+
 
 <script lang="ts">
 import Vue from 'vue'
